@@ -36,7 +36,7 @@ class Boss:
             print(Back.RESET+Fore.RESET+"Score: " + str(config.score))
             system("stty echo")
             quit()
-        if self.health == 9 or self.health==6:
+        if self.health == 3 or self.health==6:
             # count = 1
             ii = 0
             while ii<len(config.bricks):

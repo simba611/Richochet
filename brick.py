@@ -25,7 +25,7 @@ class Brick:
         if self.strength==1 or self.strength==2 or self.strength==3:
             self.strength = self.strength - 1
         if self.strength==0: 
-            if randint(1,1) == 1 and config.level!=2:
+            if randint(1,5) == 1 and config.level!=2:
                 config.fall_powerup.append(PowerUp(self, Board, len(config.fall_powerup)+1, np.random.choice([1,2,3,4,5,6]), Ball))
             config.score=config.score+10
             config.no_bricks = config.no_bricks - 1
